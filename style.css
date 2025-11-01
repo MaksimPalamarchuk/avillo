@@ -40,17 +40,29 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+.main {
+  width: 1920px;
+  height: 784px;
+  background: #FFBE2E;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.header {
+  width: 1439px;
+  height: 66px;
+  background: blue;
+  margin-left:-3px;
+}
+
+
 .container {
-  max-width: 1200px;
+  width: 1920px;
+  height: 10000px;
+  border: 10px solid red;
   margin: 0 auto;
-  padding: 20px;
-  flex: 1;
 }
 
 .button-group {
@@ -154,12 +166,7 @@ body {
   box-shadow: var(--card-shadow);
 }
 
-.box {
-  width: 1050px;
-  height: 350px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
+
 
 .why-we-good {
   display: flex;
@@ -233,12 +240,12 @@ body {
 
 }
 
-.result{
+.result {
   width: 124px;
   height: 74px;
 }
 
-.schemes{
+.schemes {
   font-family: Montserrat Alternates;
   font-weight: 700;
   font-size: 20px;
@@ -248,7 +255,7 @@ body {
   height: 80px;
 }
 
-.info-second{
+.info-second {
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 10px;
@@ -261,12 +268,12 @@ body {
 
 }
 
-.car{
+.car {
   width: 124px;
   height: 74px;
 }
 
-.key{
+.key {
   font-family: Montserrat Alternates;
   font-weight: 700;
   font-size: 20px;
@@ -276,7 +283,7 @@ body {
   height: 80px;
 }
 
-.info-artice{
+.info-artice {
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 10px;
