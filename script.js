@@ -2,28 +2,29 @@ const video = document.getElementById("storyVideo");
 const playPauseBtn = document.getElementById("playPauseBtn");
 
 if (video && playPauseBtn) {
+  // Обробник події для кнопки
   playPauseBtn.addEventListener("click", () => {
     if (video.paused) {
       video.play();
       playPauseBtn.style.opacity = "0"; // Ховаємо кнопку, коли відео грає
+      playPauseBtn.style.pointerEvents = "none"; // Щоб кнопка не заважала клікати по відео
     } else {
       video.pause();
-      playPauseBtn.style.opacity = "1"; // Показуємо кнопку, коли відео на паузі
+      playPauseBtn.style.opacity = "1"; // Показуємо кнопку, якщо відео на паузі
+      playPauseBtn.style.pointerEvents = "auto";
     }
   });
 
-  // Також можна зупиняти/запускати по кліку на саме відео
+  // Обробник події для кліку по самому відео (пауза/старт)
   video.addEventListener("click", () => {
     if (video.paused) {
       video.play();
       playPauseBtn.style.opacity = "0";
+      playPauseBtn.style.pointerEvents = "none";
     } else {
       video.pause();
       playPauseBtn.style.opacity = "1";
+      playPauseBtn.style.pointerEvents = "auto";
     }
   });
 }
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M8 5v14l11-7z" />
-</svg>
-

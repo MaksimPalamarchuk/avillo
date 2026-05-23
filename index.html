@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Avilio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,9 +37,7 @@
       <div class="intro-container">
         <div class="text-group">
           <p class="small-text">How it works </p>
-          <h2 class="title">Understand & Release
-            the stress in 3 steps
-          </h2>
+          <h2 class="title">Understand & Release the stress in 3 steps</h2>
           <p class="small-text">Alivio offers as many journals it takes, tackling different areas such as
             anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you
             become aware of your emotions, and guide you in how to manage stress. </p>
@@ -49,8 +47,7 @@
             <div class="card-number">01</div>
             <div class="card-title">Personalize</div>
             <div class="card-text">Answer a quick survey about how you express yourself, what causes you
-              stress,
-              and what area would you like to work on. This way, we can fully personalize your journal!
+              stress, and what area would you like to work on. This way, we can fully personalize your journal!
             </div>
             <img src="./Card01.png" alt="" class="card-img">
           </div>
@@ -58,8 +55,7 @@
             <div class="card-number">02</div>
             <div class="card-title">Write & Understand</div>
             <div class="card-text">Write, draw, reflect, understand. Alivio will guide you through the
-              prompts
-              and will help you manage your stress!</div>
+              prompts and will help you manage your stress!</div>
             <img src="./Card02.png" alt="" class="card-img">
           </div>
           <div class="intro-card">
@@ -70,7 +66,6 @@
             <img src="./Card03.png" alt="" class="card-img">
           </div>
         </div>
-
       </div>
     </section>
 
@@ -78,11 +73,14 @@
       <div class="text-group">
         <h2 class="title">Let's hear about Kayla's success story</h2>
         <p class="small-text">See how well Alivio works in a real customer’s life. </p>
-        <button class="btn">
+        <button class="btn" id="playPauseBtn">
           Watch
         </button>
       </div>
-      <img src="Video.png" alt="" class="story-video-img">
+      <video id="storyVideo" class="story-video-img" poster="Video.png">
+        <source src="3251737-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <section class="tell-us">
@@ -92,8 +90,7 @@
       </div>
       <div class="text-group">
         <p class="small-text">Our product </p>
-        <h2 class="title">You tell us your stress,
-          We make your diary</h2>
+        <h2 class="title">You tell us your stress, We make your diary</h2>
         <p class="small-text">Everyone experiences it, and in different ways.
           Let Alivio guide you, in a personalized journal experience, to overcome your stress. </p>
         <button class="btn">Find Your Way</button>
@@ -111,6 +108,8 @@
     </footer>
 
   </div>
+
+  <script src="Script.js"></script>
 </body>
 
 </html>
